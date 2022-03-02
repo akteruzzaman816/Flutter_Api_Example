@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_example/pages/home_page.dart';
+import 'package:flutter_api_example/pages/login_page.dart';
 
 
 class SplashScreen extends StatelessWidget {
@@ -60,7 +61,7 @@ class _SplashState extends State<Splash> {
 
   void _countDownTimer() {
     Future.delayed(const Duration(seconds: 3),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const LoginPage()));
     });
   }
 }

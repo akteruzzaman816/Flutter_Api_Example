@@ -29,7 +29,6 @@ class _HomePageState extends State<HomePage> {
                     }else{
                       return userListWidget(snapshot.data![position]["picture"]["medium"].toString(),snapshot.data![position]["name"]["title"].toString()+" "+snapshot.data![position]["name"]["first"].toString()+" "+snapshot.data![position]["name"]["last"].toString(), snapshot.data![position]["email"].toString(),context);
                     }
-
                   },
                 ),
               );
